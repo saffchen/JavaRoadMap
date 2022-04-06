@@ -1,6 +1,6 @@
 package jrm;
 
-public class SeasonMatcher {
+public class SeasonMatch {
 
     String winter = "переданный месяц означает, что на улице зима";
     String spring = "переданный месяц означает, что на улице весна";
