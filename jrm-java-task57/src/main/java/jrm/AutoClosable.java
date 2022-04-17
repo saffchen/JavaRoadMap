@@ -31,9 +31,9 @@ public class AutoClosable {
     }
 
     private static void createFileWithText(String fileName, String text) {
-        FileOutputStream fileOutputStream = null;
+
         try {
-            fileOutputStream = new FileOutputStream(fileName);
+            FileOutputStream fileOutputStream = new FileOutputStream(fileName);
             fileOutputStream.write(text.getBytes());
 
         } catch (
