@@ -14,7 +14,7 @@ public class FilterNumbers {
     private static List<Integer> filterNegativeNumbers(List<Integer> numbers) {
         List <Integer> newList = new ArrayList<>();
         for (int num : numbers){
-            if (num > 0){
+            if (num < 0){
                 newList.add(num);
             }
         }
@@ -25,7 +25,7 @@ public class FilterNumbers {
         Integer[] newArray = new Integer[3];
         int pos = 0;
         for (int num : numbers){
-            if (num < 0){
+            if (num > 0){
                 newArray[pos] = num;
                 pos++;
             }
