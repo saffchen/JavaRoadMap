@@ -17,12 +17,13 @@ public class ObjectToJson {
                         + " is not annotated with Serializable");
             }
         } catch (Exception e) {
-            throw new RuntimeException("converting has been broken");
+            throw new RuntimeException(e.getMessage());
         }
     }
 
-    private boolean isSerializable(Object o){
+    private boolean isSerializable(Object o) {
         return o.getClass().getAnnotation(Serializable.class) != null;
+
     }
 
     private String getJsonToString(Object o) throws Exception {

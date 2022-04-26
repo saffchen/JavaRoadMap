@@ -1,10 +1,9 @@
 package jrm;
-
+@Serializable
 public class User {
 
     @JsonElement
     private String name;
-
     @JsonElement(key = "personAge")
     private String age;
 
