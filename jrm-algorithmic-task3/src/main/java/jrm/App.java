@@ -11,6 +11,7 @@ public class App {
 
     // метод должен определять является ли, строка палиндромом
     public static boolean isPalindrome(String word) {
-        return new StringBuffer(word).reverse().toString().equals(word);
+        String reverseWord = new StringBuffer(word).reverse().toString();
+        return reverseWord.equals(word);
     }
 }
