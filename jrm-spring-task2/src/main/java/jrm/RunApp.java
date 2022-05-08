@@ -10,5 +10,6 @@ public class RunApp {
         // 1) получить bean Application из контекста
         Application application = context.getBean(Application.class);
         application.runApp();// 2) вызвать метод runApp();
+        context.close();
     }
 }
